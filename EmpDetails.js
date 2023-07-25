@@ -31,7 +31,9 @@ function getOutPut(){
 }
 function deleteItem(keyVal){
     localStorage.removeItem(keyVal);
+    location.reload();
 }
 function clearData(){
-    localStorage.clearData()
+   localStorage.clear();
+   location.reload();
 }
